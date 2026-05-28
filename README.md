@@ -13,7 +13,6 @@ Deniz kirliliğiyle mücadele, illegal sintine/atık deşarjlarının takibi ve 
 - [Ağ ve Telemetri Sistemi](#-ağ-ve-telemetri-sistemi)
 - [Sensör ve Analiz Yetenekleri](#-sensör-ve-analiz-yetenekleri)
 - [Klasör ve Dosya Yapısı](#-klasör-ve-dosya-yapısı)
-- [Kurulum ve Yükleme Adımları](#-kurulum-ve-yükleme-adımları)
 
 ---
 
