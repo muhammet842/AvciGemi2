@@ -1,0 +1,25 @@
+go2rtc:
+  streams:
+    c500:
+      - rtsp://YavuzKamera:12345678@192.168.0.132:554/stream2
+  webrtc:
+    candidates:
+      - 192.168.99.3:8555 # Gemi ağındaki (VPN) Raspberry Pi IP'si
+      - stun:8555
+
+cameras:
+  c500:
+    ffmpeg:
+      inputs:
+        # ÖNEMLİ: go2rtc üzerinden aldığı yayını kullanması için
+        - path: rtsp://127.0.0.1:8554/c500
+          input_args: preset-rtsp-restream
+          roles:
+            - detect
+            - record
+    detect:
+      enabled: true
+      fps: 5
+detect:
+  enabled: true
+version: 0.17-0
